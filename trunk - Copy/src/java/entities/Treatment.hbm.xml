@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-Aug-2013 12:02:00 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="entities.Treatment" table="treatment" catalog="extended">
+        <id name="batchNumber" type="string">
+            <column name="batch_number" length="100" />
+            <generator class="assigned" />
+        </id>
+        <property name="treatment" type="string">
+            <column name="treatment" length="1000" not-null="true" />
+        </property>
+        <property name="price" type="double">
+            <column name="price" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="icd10" type="string">
+            <column name="icd10" length="25" />
+        </property>
+        <property name="gdrg" type="string">
+            <column name="gdrg" length="25" />
+        </property>
+        <property name="quantity" type="int">
+            <column name="quantity" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

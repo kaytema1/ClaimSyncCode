@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-Aug-2013 12:02:00 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="entities.DetailedinvPosinvresults" table="detailedinv_posinvresults" catalog="extended">
+        <id name="detailedinvPosinvresultId" type="java.lang.Integer">
+            <column name="detailedinv_posinvresult_id" />
+            <generator class="identity" />
+        </id>
+        <property name="detailedinvId" type="int">
+            <column name="detailedinv_id" not-null="true" />
+        </property>
+        <property name="posinvresultId" type="int">
+            <column name="posinvresult_id" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
